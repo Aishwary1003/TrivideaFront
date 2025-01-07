@@ -14,7 +14,7 @@ const Admin = () => {
   const fetchDetails = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:4000/api/v1/admin/details",
+        "https://trivideaback.onrender.com/api/v1/admin/details",
         {
           withCredentials: true,
         }
@@ -35,7 +35,7 @@ const Admin = () => {
 
   const fetchPandits = async () => {
     try {
-      const res = await axios.get("http://localhost:4000/api/v1/pandits");
+      const res = await axios.get("https://trivideaback.onrender.com/api/v1/pandits");
       if (res.status === 200) {
         console.log(res);
         setPandits(res?.data?.data);
