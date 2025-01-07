@@ -24,7 +24,7 @@ const RegistrationForm = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/v1/signup",
+        "https://trivideaback.onrender.com/api/v1/signup",
         formData
       );
       console.log(response);
