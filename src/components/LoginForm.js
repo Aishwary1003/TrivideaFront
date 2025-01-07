@@ -21,7 +21,7 @@ const LoginForm = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/v1/login",
+        "https://trivideaback.onrender.com/api/v1/login",
         formData,
         { withCredentials: true }
       );
@@ -30,7 +30,7 @@ const LoginForm = () => {
         toast.success("User LoggedIn Successfully");
 
         const roleResponse = await axios.get(
-          "http://localhost:4000/api/v1/role",
+          "https://trivideaback.onrender.com/api/v1/role",
           {
             withCredentials: true,
           }
