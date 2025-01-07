@@ -30,7 +30,7 @@ const Profile = ({ superDetails, toggleRefresh }) => {
     console.log(formData);
     try {
       const res = await axios.patch(
-        "http://localhost:4000/api/v1/superadmin/details/update",
+        "https://trivideaback.onrender.com/api/v1/superadmin/details/update",
         formData,
         { withCredentials: true }
       );
